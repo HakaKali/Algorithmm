@@ -1,3 +1,4 @@
+```
 def max_product(n):
     # We use memoization to store intermediate results
     memo = {}
@@ -34,3 +35,4 @@ for n in range(3, 10):
 n = int(input("Enter an integer n (n >= 3): "))
 print("Maximum product:", max_product(n))
 '''
+```
