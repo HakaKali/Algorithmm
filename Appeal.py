@@ -15,6 +15,8 @@ def max_product(n):
             return memo[(i, n)]
 
         # Option 1: Include the number 'i' in the product and subtract it from 'n'
+        # include = i
+        # include *= opt(i, n - i)
         include = i * opt(i, n - i)
         # Option 2: Skip the number 'i' and move to the next number
         skip = opt(i + 1, n)
